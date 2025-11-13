@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Герои — Pixel Tactics</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="custom-navbar">
+    <a href="index.html" class="navbar-brand">PIXEL&nbsp;TACTICS</a>
+    <div class="nav-links">
+      <a href="index.html" class="neon-btn">Главная</a>
+      <a href="heroes.html" class="active">Герои</a>
+      <a href="rules.html" class="neon-btn">Правила</a>
+      <a href="about.html" class="neon-btn">О проекте</a>
+      <a href="contact.html" class="neon-btn">Контакты</a>
+      <a href="create.html" class="neon-btn">Создай героя</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Герои Pixel Tactics</h1>
+    <p>Выбери своего лидера и приведи армию к победе!</p>
+
+    <div class="search-filter-bar">
+      <input type="text" id="heroSearch" class="neon-input" placeholder="🔍 Поиск героя..." />
+
+      <div class="filter-buttons">
+        <button class="neon-filter-btn active" data-filter="all">Все</button>
+        <button class="neon-filter-btn" data-filter="attack">Атака</button>
+        <button class="neon-filter-btn" data-filter="support">Поддержка</button>
+      </div>
+    </div>
+
+    <section class="hero-grid">
+
+      <div class="hero-card" data-type="attack" 
+           data-back-desc="Воскрешается при смерти, отражая 50% полученного урона."
+           data-back-name="Бессмертный (Альтер)">
+        <img src="pho/ydr.png" alt="Immortal" class="hero-image">
+        <h3 class="hero-name">Бессмертный</h3>
+        <p class="hero-desc">Отличный герой защиты.</p>
+        <table class="hero-table">
+          <tr><th>Позиция</th><th>Способность</th></tr>
+          <tr><td>Авангард</td><td>Перехватывает урон, снижая до 1</td></tr>
+          <tr><td>Фронт</td><td>Ваш лидер не может быть целью ближней атаки</td></tr>
+          <tr><td>Тыл</td><td>Дальнобойные атаки наносят на 1 урон меньше</td></tr>
+          <tr><td>Приказ</td><td>Восстанавливает 2 HP лидеру</td></tr>
+        </table>
+      </div>
+
+      <div class="hero-card" data-type="attack" 
+           data-back-desc="Демонизированная форма, жертвует союзников ради абсолютной силы."
+           data-back-name="Демонолог (Альтер)">
+        <img src="pho/sgrs.png" alt="Diabolist" class="hero-image">
+        <h3 class="hero-name">Демонолог</h3>
+        <p class="hero-desc">Призывает демонические силы и ослабляет врагов.</p>
+        <table class="hero-table">
+          <tr><th>Позиция</th><th>Способность</th></tr>
+          <tr><td>Авангард</td><td>Наносит 2 урона лидеру врага</td></tr>
+          <tr><td>Фронт</td><td>Враги теряют 1 силу атаки</td></tr>
+          <tr><td>Тыл</td><td>Союзники наносят дополнительный урон</td></tr>
+          <tr><td>Приказ</td><td>Призывает дьявольского фамильяра</td></tr>
+        </table>
+      </div>
+
+      <div class="hero-card" data-type="support"
+           data-back-desc="Друид впал в безумие природы, атакует всё живое."
+           data-back-name="Друид (Альтер)">
+        <img src="pho/qw.png" alt="Druid" class="hero-image">
+        <h3 class="hero-name">Друид</h3>
+        <p class="hero-desc">Восстанавливает союзников и управляет силами природы.</p>
+        <table class="hero-table">
+          <tr><th>Позиция</th><th>Способность</th></tr>
+          <tr><td>Авангард</td><td>Каждый союзник получает +1 HP</td></tr>
+          <tr><td>Фронт</td><td>Лечит всех повреждённых союзников</td></tr>
+          <tr><td>Тыл</td><td>Повышает эффективность лечения в 2 раза</td></tr>
+          <tr><td>Приказ</td><td>Призывает растения-защитников</td></tr>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- === МОДАЛЬНОЕ ОКНО ГЕРОЯ === -->
+    <div id="heroModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalName">Имя героя</h2>
+        <p id="modalDesc">Описание героя появится здесь.</p>
+      </div>
+    </div>
+
+    <div class="link-buttons">
+      <a href="index.html" class="hero-link">Смотреть главную страницу</a>
+      <a href="rules.html" class="hero-link">Посмотреть правила</a>
+    </div>
+  </main>
+
+  <footer>
+    © Sergaliyev Alisher.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Pixel Tactics</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <nav class="custom-navbar">
+    <a href="index.html" class="navbar-brand">PIXEL&nbsp;TACTICS</a>
+    <div class="nav-links">
+      <a href="index.html" class="neon-btn">Главная</a>
+      <a href="heroes.html" class="neon-btn">Герои</a>
+      <a href="rules.html" class="neon-btn">Правила</a>
+      <a href="about.html" class="neon-btn">О проекте</a>
+      <a href="contact.html" class="active ">Контакты</a>
+      <a href="create.html" class="neon-btn">Создай героя</a>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main class="container text-center my-5">
+    <h1>Связаться с нами</h1>
+    <p class="contact-intro">
+      Если у тебя есть вопросы, предложения или идеи — напиши нам!  
+      Мы обязательно ответим.
+    </p>
+
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" placeholder="Введите имя">
+        <span class="error-msg">Введите имя</span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Электронная почта</label>
+        <input type="email" id="email" name="email" placeholder="Введите email">
+        <span class="error-msg">Некорректный email</span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="4" placeholder="Введите сообщение"></textarea>
+        <span class="error-msg">Введите сообщение</span>
+      </div>
+
+      <button type="submit" class="btn-pixel submit-btn">Отправить</button>
+    </form>
+
+    <div id="formSuccess" class="form-success">Спасибо! Сообщение отправлено 💌</div>
+
+    <a href="index.html" class="hero-link">⬅ Вернуться на главную</a>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © Sergaliyev Alisher.
+  </footer>
+</body>
+</html>

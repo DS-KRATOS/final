@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создай своего героя | Pixel Tactics</title>
+
+  <!-- === ШРИФТ И СТИЛИ === -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- === jQuery и main.js === -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav class="custom-navbar">
+      <a href="index.html" class="navbar-brand">PIXEL&nbsp;TACTICS</a>
+      <div class="nav-links">
+        <a href="index.html" class="neon-btn">Главная</a>
+        <a href="heroes.html" class="neon-btn">Герои</a>
+        <a href="rules.html" class="neon-btn">Правила</a>
+        <a href="about.html" class="neon-btn">О проекте</a>
+        <a href="contact.html" class="neon-btn">Контакты</a>
+        <a href="create.html" class="neon-btn active">Создай героя</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="fade-in">
+    <h1 class="page-title">Создай своего героя</h1>
+    <p class="page-subtitle">Добавь собственного персонажа в мир Pixel Tactics!</p>
+
+    <form id="heroForm" class="hero-form">
+      <input type="text" id="heroName" placeholder="Имя героя" required>
+      <input type="text" id="heroDesc" placeholder="Описание героя" required>
+      <button type="submit" class="neon-btn">➕ Добавить героя</button>
+    </form>
+
+    <table id="customHeroTable" class="hero-table custom-table">
+      <thead>
+        <tr><th>Имя</th><th>Описание</th><th>Действия</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © Sergaliyev Alisher.
+  </footer>
+
+</body>
+</html>
